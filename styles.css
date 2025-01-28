@@ -1,6 +1,8 @@
 body {
+    background-color: #353434;
+    color:#fff;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  
   }
   
   .container {
@@ -23,3 +25,17 @@ body {
     background-color: #0056b3;
   }
   
+  .hidden {
+    display: none;
+  }
+  
+  /* Стили для отображения тега */
+  .visible {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  .btn{
+    margin-top: 20px;
+  }
