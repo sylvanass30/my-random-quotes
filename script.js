@@ -44,13 +44,15 @@ const quotes = [
   const quoteElement = document.getElementById('quote');
   const authorElement= document.getElementById('author')
   const generateBtn = document.getElementById('generate-btn');
-  function generateRandomQuote(index) {
-    randomIndex = Math.floor(Math.random() * quotes.length);
-    // if (randomIndex===index) {
-    //   randomIndex+=1;
-    // }
+  let lastIndex=-1;
+  function generateRandomQuote() {
+    do{
+      
+      randomIndex = Math.floor(Math.random() * quotes.length);
+    } while (randomIndex===lastIndex)
+   
     const randomQuote = quotes[randomIndex];
-      quoteElement.textContent= `"${randomQuote.quote}"`;
+      quoteElement.textContent= randomQuote.quote;
       authorElement.textContent=randomQuote.author;
       authorElement.classList.remove('hidden');
       authorElement.classList.add('visible');
