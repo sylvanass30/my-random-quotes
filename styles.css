@@ -37,5 +37,45 @@ body {
     font-weight: bold;
   }
   .btn{
+    margin: 20px;
+  }
+  .favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     margin-top: 20px;
+  }
+  
+  .favorite-item {
+    background-color: #727070;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #4da0ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .remove-btn:hover {
+    background-color: #3657e9;
+  }
+  .fav-btn{
+    margin-top: 10px;
   }
